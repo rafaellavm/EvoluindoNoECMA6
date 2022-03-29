@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Spread Operators</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+</body>
+<script>
+    console.log
+
+    function CadastroDePessoa(info) {
+
+        let novosDados = {...info,
+            cargo: "programadora",
+            status: "atuando",
+            codigo: 3452
+        }
+        return novosDados;
+    }
+
+    console.log(CadastroDePessoa({
+        nome: "Rafaela",
+        sobrenome: "Fraga",
+        anoDeInicio: 2022
+    }));
+
+
+    //1) Juntando numeros 
+    /*let primeiros = [1, 2, 3];
+    let segundos = [4, 5, 6];
+
+    let numeros = [...primeiros, 4, 5, 6];
+
+    console.log(numeros);
+
+    let pessoa = {
+        nome: "Rafaela",
+        idade: 42,
+        cargo: "programadora"
+    }
+
+    let novaPessoa = {...pessoa,
+        anoAtual: 2022,
+        cidade: "Rio de Janeiro"
+    };
+
+    console.log(novaPessoa);*/
+
+    //---------------------------
+</script>
+
+</html>
