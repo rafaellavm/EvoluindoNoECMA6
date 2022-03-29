@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="">
+
+    <title>Desconstrução em objetos e arrays</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="divConteudo">
+        <p id="pTexto"></p>
+    </div>
+</body>
+<script>
+    /*const pessoa = {
+                        nome: "Rafaela",
+                        sobrenome: "Fraga",
+                        idade: 10,
+                        cargo: "Desenvolvedor"
+                    }
+
+                    //ele cria uma variável só com o conteúdo de nome
+                    let {
+                        nome
+                    } = pessoa;
+
+                    let {
+                        sobrenome
+                    } = pessoa;
+
+                    let {
+                        idade,
+                        cargo
+                    } = pessoa;
+
+                    //colocando outro nome na variavel
+                    let {
+                        cargo: programador
+                    } = pessoa; */
+
+    //console.log(nome);
+    //console.log(sobrenome);
+    //console.log(idade);
+    //console.log(cargo);
+    //console.log(programador);
+
+    //---------------------------
+
+    //mudando o valor da variável: 
+    //cargo = "Louco";
+    //console.log(cargo);
+    //console.log(pessoa);
+
+    //---------------------------
+
+    let nomes = ["Matheus", "Fraga", 10];
+    //1 = é a posição
+    //let {1: segundoNome} = nomes;
+
+    //onsole.log(segundoNome);
+
+    //---------------------------
+
+    /* let {
+         1: segundonome,
+         2: novaIdade
+     } = nomes;
+     console.log(segundoNome);*/
+
+    //---------------------------
+    let {
+        primeiroNome,
+        segundoNome,
+        Idade
+    } = nomes;
+
+    let [nome, sobrenome, idade] = nomes;
+
+    console.log(nome);
+    console.log(sobrenome);
+    console.log(idade);
+</script>
+
+</html>
