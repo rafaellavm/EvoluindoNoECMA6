@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="">
+
+    <title>Uso de variáveis em strings</title>
+    <meta charset="utf-8">
+</head>
+
+
+<body>
+    <div id="divConteudo">
+        <p id="pTexto"></p>
+    </div>
+</body>
+<script>
+    let nome = "Rafaela";
+    let sobrenome = "Marraschi";
+    let pessoa = `Meu nome é: ${nome} e meu sobrenome é ${sobrenome}`;
+
+    document.querySelector('p').textContent = pessoa;
+</script>
+
+</html>
